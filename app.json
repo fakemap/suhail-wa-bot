@@ -1,0 +1,113 @@
+{
+  "name": "Batman-MD",
+  "description": "I am Batman-MD Whatsapp Chuddy Buddy built in NodeJs to make experience better\n\t if Any Problem : +923245643588",
+ "logo":"null",
+ 
+  "old__logo": "null",
+  "keywords": ["whatsappbot", "suhailMd", "suhail Md bot", "Suhail-Md", "SuhailMdWhatsaooBot", "SuhailWaBot","SuhailMD","Suhail Md Whatsapp Bot","multi device"],
+  "success_url": "/suhail/",
+  "app_url": "/qr/",
+  "__stack":"container",
+  "env": {
+    "OWNER_NAME": {
+      "description": "Muhammad Makki",    
+      "value": "★彡[ᴏɴʟʏ_ᴏɴᴇ_🥇ᴇᴍᴘɪʀᴇ]彡★",
+      "required" :true
+    },   
+     
+    "CAN_WELCOME": {
+      "description": "put 'false' or 'true' to enable & disable WELCOME ",
+      "value": "false",
+      "required" :false
+    },
+     
+    "CAN_GOODBYE": {
+      "description": "put 'false' or 'true' to enable & disable GOODBYE ",
+      "value": "false",
+      "required" :false
+    },
+    "BOT_NAME": {
+      "description": "Batman-MD",
+      "required" :false,    
+      "value": "Empire_Md "
+    }, 
+    "TZ": {
+      "description": "Asia,Karachi",
+      "required" :false,    
+      "value": "Nigeria,Osun,Oshogbo."
+    },  
+    "FLUSH": {
+      "description": " Make it 'true' if bot connected but not responed (After deployement!)",
+      "required" :false,    
+      "value": "false"
+    },
+    "WARN_COUNT": {
+      "description": " Warn count for users to kick/block when warn limit exceed!",
+      "required" :false,    
+      "value": "3"
+    },
+    "HEROKU_API_KEY": {
+      "description": "Put Your Heroku Api Key Here",
+      "value": "",
+      "required" :true 
+    },   
+    "HEROKU_APP_NAME": {
+      "description": "Put Your Heroku App Name Here",
+      "value": "",
+    "required" :true
+    }, 
+    "MSGS_IN_LOG": {
+      "description": "Fill the value -true- if you want to see Messages in logs.",
+      "required" :false,
+      "value": "false"
+    },
+    "PREFIX": {
+      "description": "Enter your desired prefix for bot. you can set `all | . | .!*`",
+      "value": "."
+    },
+    "OWNER_NUMBER": {
+      "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
+      "value": "2348078582627"
+    },
+    "SESSION_ID": {
+      "description": "put your SESSION_ID here.",
+      "value": "null"
+      "
+  
+    },
+    "OPENAI_API_KEY": {
+      "description": "put your OPENAI api key here.Get it from beta.openai.com ",
+      "value": "",
+      "required" :false
+    }, 
+    "ELEVENLAB_API_KEY": {
+      "description": "Put your ElevenLab api key here for Aitts. Watch tutorial from https://youtu.be/HCDcdPtkwg4 ",
+      "value": "",
+      "required" :false
+    }, 
+    "REMOVE_BG_KEY": {
+      "description": "put your REMOVE BG KEY here.Get it from removeBg.com ",
+      "value": "",
+      "required" :false
+    },
+    "MODE": {
+      "description": "Worktype of your bot. Use public/private, if private then only bot number can use it. If public then everyone can use it.",
+      "value": "private"
+    },
+    "PACK_NAME": {
+      "description": "Made By",
+      "value": "Sticker by",
+      "required": false 
+    },
+    "PACK_AUTHER": {
+      "description": "𝘼𝙃𝙈₇ 𝙎𝙩𝙞𝙘𝙠𝙚𝙧𝙨",
+      "value": "★彡[ᴏɴʟʏ_ᴏɴᴇ_🥇ᴇᴍᴘɪʀᴇ]彡★",
+      "required": false 
+    }
+  }, 
+  "addons": [{ "plan": "heroku-postgresql:essential-1" }],
+  "buildpacks": [
+    { "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" },
+    { "url": "https://github.com/carlosdommor/heroku-buildpack-ffmpeg-latest" }
+  ]
+}
