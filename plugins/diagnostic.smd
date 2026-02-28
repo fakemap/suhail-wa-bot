@@ -1,0 +1,15 @@
+const { smd } = require('../lib')
+
+smd({
+    pattern: "diagnostic",
+    desc: "Checks if bot is receiving messages",
+    category: "misc",
+    filename: __filename
+}, async (message) => {
+    console.log("--- DIAGNOSTIC TRIGGERED ---");
+    return await message.reply("Bot is receiving messages and acting correctly!");
+})
+
+// Global interceptor for debugging
+// This will log every incoming message to the Koyeb console
+console.log("Diagnostic Plugin Loaded - Listening for all messages...");
